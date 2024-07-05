@@ -3,15 +3,15 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    run: nginx
-  name: nginx
+    run: nginxdemo
+  name: nginxdemo
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    run: nginx
+    run: nginxdemo
   type: LoadBalancer
 status:
   loadBalancer: {}
